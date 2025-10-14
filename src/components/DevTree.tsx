@@ -60,14 +60,14 @@ export default function DevTree({data}: DevTreeProps) {
         <>
             <Header />
 
-            <div className="bg-gray-100  min-h-screen py-10">
-                <main className="mx-auto max-w-5xl p-10 md:p-0">
+            <div className="bg-gray-100 min-h-screen py-5 md:py-10">
+                <main className="mx-auto max-w-5xl p-4 sm:p-10 md:p-0">
 
                     <NavigationTabs />
                     
                     <div className="flex justify-end">
                         <Link 
-                            className="font-bold text-right text-slate-800 text-2xl"
+                            className="font-bold text-right text-slate-800 text-xl sm:text-2xl"
                             to={`/${data.handle}`}
                             target="_blank"
                             rel="noreferrer noopener"

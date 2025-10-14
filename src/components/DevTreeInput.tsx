@@ -12,7 +12,7 @@ export default function DevTreeInput({item, handleUrlChange, handleEnableLink} :
 
   return (
     <div className="bg-white shadow-sm flex p-5 items-center gap-x-3">
-        <div className="size-12 bg-cover" style={{backgroundImage: `url('/social/icon_${item.name}.svg')`}}>
+        <div className="size-8 md:size-12 bg-cover" style={{backgroundImage: `url('/social/icon_${item.name}.svg')`}}>
             
         </div>
 
@@ -29,14 +29,14 @@ export default function DevTreeInput({item, handleUrlChange, handleEnableLink} :
             onChange={() => handleEnableLink(item.name)}
             className={classNames(
                 item.enabled ? 'bg-blue-500' : 'bg-gray-200',
-                'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                'relative inline-flex h-4 w-9 sm:h-6 sm:w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
             )}
         >
             <span
                 aria-hidden="true"
                 className={classNames(
                     item.enabled ? 'translate-x-5' : 'translate-x-0',
-                    'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out'
+                    'pointer-events-none inline-block size-3 sm:size-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out'
                 )}
             />
         </Switch>

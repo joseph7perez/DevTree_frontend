@@ -52,7 +52,7 @@ export default function LoginView() {
                       required: "El Email es obligatorio",
                       pattern: {
                           value: /\S+@\S+\.\S+/,
-                          message: "E-mail no válido",
+                          message: "Correo no válido",
                       },
                   })}
               />

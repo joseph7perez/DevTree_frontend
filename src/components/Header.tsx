@@ -9,9 +9,9 @@ export default function Header() {
   //  console.log(location);
     
   return (
-    <header className="bg-slate-800 py-5">
+    <header className="bg-slate-800 p-5">
         <div className="mx-auto max-w-5xl flex flex-col md:flex-row items-center md:justify-between">
-            <div className="w-full p-5 lg:p-0 md:w-1/3">
+            <div className="w-3/4 sm:w-full p-5 lg:p-0 md:w-1/3">
                 <Logo />
                 
             </div>

@@ -60,8 +60,8 @@ export default function DevTree({data}: DevTreeProps) {
         <>
             <Header />
 
-            <div className="bg-gray-100 min-h-screen py-5 md:py-10">
-                <main className="mx-auto max-w-5xl p-4 sm:p-10 md:p-0">
+            <div className="bg-gray-100 min-h-screen py-5 lg:py-10">
+                <main className="mx-auto max-w-5xl p-4 xl:p-0">
 
                     <NavigationTabs />
                     
@@ -74,11 +74,11 @@ export default function DevTree({data}: DevTreeProps) {
                         >Visitar Mi Perfil: {data.handle}</Link>
                     </div>
 
-                    <div className="flex flex-col md:flex-row gap-10 mt-10">
+                    <div className="flex flex-col md:flex-row gap-6 lg:gap-10 mt-10">
                         <div className="flex-1 ">
                             <Outlet />
                         </div>
-                        <div className="w-full md:w-96 bg-slate-800 px-5 py-10 space-y-6">
+                        <div className="w-full md:w-80 lg:w-96 bg-slate-800 px-5 py-10 space-y-6">
                             <p className="text-4xl text-white text-center">{data.handle}</p>
                             <p className="text-center text-2sm text-white font-bold">{data.name}</p>
                             

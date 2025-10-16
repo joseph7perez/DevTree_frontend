@@ -34,20 +34,22 @@ export default function LoginView() {
 
   return (
     <>
-      <h1 className="text-white font-bold text-3xl">Iniciar Sesión</h1>
+      <h1 className="text-white font-bold text-3xl text-center mb-6">
+        Iniciar Sesión
+      </h1>
 
       <form 
           onSubmit={handleSubmit(handleLogin)}
-          className="bg-white px-5 py-10 rounded-lg space-y-10 mt-10"
+          className="bg-white/10 backdrop-blur-lg border border-white/20 px-6 py-8 rounded-2xl shadow-xl space-y-6"
           noValidate
       >
-          <div className="grid grid-cols-1 space-y-3">
-              <label htmlFor="email" className="text-2xl text-slate-500">E-mail</label>
+          <div className="space-y-2">
+              <label htmlFor="email" className="text-lg text-slate-300 font-medium">E-mail</label>
               <input
                   id="email"
                   type="email"
                   placeholder="Email de Registro"
-                  className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                  className="w-full p-3 rounded-lg bg-white/20 text-white placeholder-slate-400 border border-transparent focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/50 transition"
                   {...register("email", {
                       required: "El Email es obligatorio",
                       pattern: {
@@ -61,12 +63,12 @@ export default function LoginView() {
               )}
           </div>
           <div className="grid grid-cols-1 space-y-3">
-              <label htmlFor="password" className="text-2xl text-slate-500">Password</label>
+              <label htmlFor="password" className="text-lg text-slate-300 font-medium">Contraseña</label>
               <input
                   id="password"
                   type="password"
-                  placeholder="Password de Registro"
-                  className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                  placeholder="Contraseña registrada"
+                  className="w-full p-3 rounded-lg bg-white/20 text-white placeholder-slate-400 border border-transparent focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/50 transition"
                   {...register("password", {
                       required: "El Password es obligatorio",
                   })}

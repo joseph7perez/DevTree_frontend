@@ -70,7 +70,7 @@ export default function LoginView() {
                   placeholder="Contraseña registrada"
                   className="w-full p-3 rounded-lg bg-white/20 text-white placeholder-slate-400 border border-transparent focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/50 transition"
                   {...register("password", {
-                      required: "El Password es obligatorio",
+                      required: "La contraseña es obligatoria",
                   })}
               />
               {errors.password && (
